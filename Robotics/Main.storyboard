@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Robotics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D38-GQ-5eu" userLabel="Robot View" customClass="RobotView" customModule="Robotics" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vWQ-Bv-709">
+                                        <rect key="frame" x="8" y="484" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="w40-tP-n0K"/>
+                                            <constraint firstAttribute="height" constant="30" id="wpK-Ag-cYX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-6w-CLT">
+                                        <rect key="frame" x="8" y="547" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9sB-yM-gsE"/>
+                                            <constraint firstAttribute="width" constant="97" id="jRj-Fw-MNs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4p-eV-FnG">
+                                        <rect key="frame" x="14" y="8" width="91" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NI6-IK-wcj"/>
+                                            <constraint firstAttribute="width" constant="91" id="OBm-ie-qgK"/>
+                                        </constraints>
+                                        <state key="normal" title="Draw a Circle"/>
+                                        <connections>
+                                            <action selector="drawACircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDR-Cj-YhN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="b4p-eV-FnG" firstAttribute="top" secondItem="D38-GQ-5eu" secondAttribute="top" constant="8" id="MRA-kH-sfO"/>
+                                    <constraint firstItem="MOj-6w-CLT" firstAttribute="leading" secondItem="D38-GQ-5eu" secondAttribute="leading" constant="8" id="XJS-E4-qIa"/>
+                                    <constraint firstItem="vWQ-Bv-709" firstAttribute="leading" secondItem="D38-GQ-5eu" secondAttribute="leading" constant="8" id="cRb-lB-WxB"/>
+                                    <constraint firstItem="b4p-eV-FnG" firstAttribute="leading" secondItem="D38-GQ-5eu" secondAttribute="leading" constant="14" id="w4k-gc-mLu"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-gG-k4f">
+                                <rect key="frame" x="121" y="482" width="461" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ixz-Qx-EQA"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="angleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="PUs-Kz-cAa"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="APf-aY-emE">
+                                <rect key="frame" x="121" y="550" width="461" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DNW-1F-reb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="angleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eMI-fD-Vxy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D38-GQ-5eu" secondAttribute="bottom" id="8vL-38-gPt"/>
+                            <constraint firstAttribute="trailing" secondItem="D38-GQ-5eu" secondAttribute="trailing" id="8vq-HH-Xkx"/>
+                            <constraint firstItem="vWQ-Bv-709" firstAttribute="centerY" secondItem="EoM-gG-k4f" secondAttribute="centerY" constant="2" id="PSf-y9-sZx"/>
+                            <constraint firstItem="APf-aY-emE" firstAttribute="leading" secondItem="MOj-6w-CLT" secondAttribute="trailing" constant="18" id="Xx9-Nn-tpl"/>
+                            <constraint firstItem="D38-GQ-5eu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwE-D3-nsc"/>
+                            <constraint firstAttribute="trailing" secondItem="APf-aY-emE" secondAttribute="trailing" constant="20" id="cP5-rv-UZA"/>
+                            <constraint firstItem="EoM-gG-k4f" firstAttribute="leading" secondItem="vWQ-Bv-709" secondAttribute="trailing" constant="18" id="d33-Ny-BxG"/>
+                            <constraint firstItem="MOj-6w-CLT" firstAttribute="centerY" secondItem="APf-aY-emE" secondAttribute="centerY" constant="-3" id="mzE-ci-tzO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="APf-aY-emE" secondAttribute="bottom" constant="20" id="pd6-ro-qDP"/>
+                            <constraint firstItem="APf-aY-emE" firstAttribute="top" secondItem="EoM-gG-k4f" secondAttribute="bottom" constant="38" id="tBm-D2-pB0"/>
+                            <constraint firstAttribute="trailing" secondItem="EoM-gG-k4f" secondAttribute="trailing" constant="20" id="vbn-9f-hUU"/>
+                            <constraint firstItem="D38-GQ-5eu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yuA-Dp-6Yx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" prompt="" id="fGU-te-rZ3"/>
+                    <connections>
+                        <outlet property="robotView" destination="D38-GQ-5eu" id="4GE-tr-FJG"/>
+                        <outlet property="v1Field" destination="vWQ-Bv-709" id="5dD-f2-D06"/>
+                        <outlet property="v1Slider" destination="EoM-gG-k4f" id="sgL-bZ-JIl"/>
+                        <outlet property="v2Field" destination="MOj-6w-CLT" id="gny-bC-rKy"/>
+                        <outlet property="v2Slider" destination="APf-aY-emE" id="wNV-dH-Ahx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="273"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF8CA66A1C257B5C00E50902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA6691C257B5C00E50902 /* AppDelegate.swift */; };
+		FF8CA6721C257B5C00E50902 /* Robotics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA6701C257B5C00E50902 /* Robotics.xcdatamodeld */; };
+		FF8CA6741C257B5C00E50902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA6731C257B5C00E50902 /* Assets.xcassets */; };
+		FF8CA6771C257B5C00E50902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA6751C257B5C00E50902 /* LaunchScreen.storyboard */; };
+		FF8CA6821C257B5D00E50902 /* RoboticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA6811C257B5D00E50902 /* RoboticsTests.swift */; };
+		FF8CA69B1C257B6700E50902 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA69A1C257B6700E50902 /* Robot.swift */; };
+		FF8CA69D1C257B6A00E50902 /* Arm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA69C1C257B6A00E50902 /* Arm.swift */; };
+		FF8CA6A01C257B8100E50902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA69E1C257B8100E50902 /* ViewController.swift */; };
+		FF8CA6A11C257B8100E50902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA69F1C257B8100E50902 /* Main.storyboard */; };
+		FF8CA6A31C257D4900E50902 /* RobotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA6A21C257D4900E50902 /* RobotView.swift */; };
+		FF8CA6A51C257F5D00E50902 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA6A41C257F5D00E50902 /* ArcView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF8CA67E1C257B5D00E50902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8CA65E1C257B5C00E50902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8CA6651C257B5C00E50902;
+			remoteInfo = Robotics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF8CA6661C257B5C00E50902 /* Robotics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robotics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CA6691C257B5C00E50902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF8CA6711C257B5C00E50902 /* Robotics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Robotics.xcdatamodel; sourceTree = "<group>"; };
+		FF8CA6731C257B5C00E50902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF8CA6761C257B5C00E50902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF8CA6781C257B5C00E50902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8CA67D1C257B5D00E50902 /* RoboticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoboticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CA6811C257B5D00E50902 /* RoboticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboticsTests.swift; sourceTree = "<group>"; };
+		FF8CA6831C257B5D00E50902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8CA69A1C257B6700E50902 /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		FF8CA69C1C257B6A00E50902 /* Arm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arm.swift; sourceTree = "<group>"; };
+		FF8CA69E1C257B8100E50902 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF8CA69F1C257B8100E50902 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FF8CA6A21C257D4900E50902 /* RobotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotView.swift; sourceTree = "<group>"; };
+		FF8CA6A41C257F5D00E50902 /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		FF9E0F131C26BB6F003110D0 /* IK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IK.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF8CA6631C257B5C00E50902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CA67A1C257B5D00E50902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF8CA65D1C257B5C00E50902 = {
+			isa = PBXGroup;
+			children = (
+				FF8CA6681C257B5C00E50902 /* Robotics */,
+				FF8CA6801C257B5D00E50902 /* RoboticsTests */,
+				FF8CA6671C257B5C00E50902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF8CA6671C257B5C00E50902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CA6661C257B5C00E50902 /* Robotics.app */,
+				FF8CA67D1C257B5D00E50902 /* RoboticsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8CA6681C257B5C00E50902 /* Robotics */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E0F131C26BB6F003110D0 /* IK.gif */,
+				FF8CA6691C257B5C00E50902 /* AppDelegate.swift */,
+				FF8CA69A1C257B6700E50902 /* Robot.swift */,
+				FF8CA6A21C257D4900E50902 /* RobotView.swift */,
+				FF8CA69C1C257B6A00E50902 /* Arm.swift */,
+				FF8CA6A41C257F5D00E50902 /* ArcView.swift */,
+				FF8CA69E1C257B8100E50902 /* ViewController.swift */,
+				FF8CA69F1C257B8100E50902 /* Main.storyboard */,
+				FF8CA6731C257B5C00E50902 /* Assets.xcassets */,
+				FF8CA6751C257B5C00E50902 /* LaunchScreen.storyboard */,
+				FF8CA6781C257B5C00E50902 /* Info.plist */,
+				FF8CA6701C257B5C00E50902 /* Robotics.xcdatamodeld */,
+			);
+			path = Robotics;
+			sourceTree = "<group>";
+		};
+		FF8CA6801C257B5D00E50902 /* RoboticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CA6811C257B5D00E50902 /* RoboticsTests.swift */,
+				FF8CA6831C257B5D00E50902 /* Info.plist */,
+			);
+			path = RoboticsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF8CA6651C257B5C00E50902 /* Robotics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8CA6911C257B5D00E50902 /* Build configuration list for PBXNativeTarget "Robotics" */;
+			buildPhases = (
+				FF8CA6621C257B5C00E50902 /* Sources */,
+				FF8CA6631C257B5C00E50902 /* Frameworks */,
+				FF8CA6641C257B5C00E50902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Robotics;
+			productName = Robotics;
+			productReference = FF8CA6661C257B5C00E50902 /* Robotics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF8CA67C1C257B5D00E50902 /* RoboticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8CA6941C257B5D00E50902 /* Build configuration list for PBXNativeTarget "RoboticsTests" */;
+			buildPhases = (
+				FF8CA6791C257B5D00E50902 /* Sources */,
+				FF8CA67A1C257B5D00E50902 /* Frameworks */,
+				FF8CA67B1C257B5D00E50902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8CA67F1C257B5D00E50902 /* PBXTargetDependency */,
+			);
+			name = RoboticsTests;
+			productName = RoboticsTests;
+			productReference = FF8CA67D1C257B5D00E50902 /* RoboticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF8CA65E1C257B5C00E50902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = erkekin;
+				TargetAttributes = {
+					FF8CA6651C257B5C00E50902 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FF8CA67C1C257B5D00E50902 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FF8CA6651C257B5C00E50902;
+					};
+				};
+			};
+			buildConfigurationList = FF8CA6611C257B5C00E50902 /* Build configuration list for PBXProject "Robotics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF8CA65D1C257B5C00E50902;
+			productRefGroup = FF8CA6671C257B5C00E50902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF8CA6651C257B5C00E50902 /* Robotics */,
+				FF8CA67C1C257B5D00E50902 /* RoboticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF8CA6641C257B5C00E50902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CA6A11C257B8100E50902 /* Main.storyboard in Resources */,
+				FF8CA6771C257B5C00E50902 /* LaunchScreen.storyboard in Resources */,
+				FF8CA6741C257B5C00E50902 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CA67B1C257B5D00E50902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF8CA6621C257B5C00E50902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CA6A01C257B8100E50902 /* ViewController.swift in Sources */,
+				FF8CA69B1C257B6700E50902 /* Robot.swift in Sources */,
+				FF8CA69D1C257B6A00E50902 /* Arm.swift in Sources */,
+				FF8CA6721C257B5C00E50902 /* Robotics.xcdatamodeld in Sources */,
+				FF8CA66A1C257B5C00E50902 /* AppDelegate.swift in Sources */,
+				FF8CA6A51C257F5D00E50902 /* ArcView.swift in Sources */,
+				FF8CA6A31C257D4900E50902 /* RobotView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CA6791C257B5D00E50902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CA6821C257B5D00E50902 /* RoboticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF8CA67F1C257B5D00E50902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8CA6651C257B5C00E50902 /* Robotics */;
+			targetProxy = FF8CA67E1C257B5D00E50902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF8CA6751C257B5C00E50902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8CA6761C257B5C00E50902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8CA68F1C257B5D00E50902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF8CA6901C257B5D00E50902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8CA6921C257B5D00E50902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Robotics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.Robotics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF8CA6931C257B5D00E50902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Robotics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.Robotics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF8CA6951C257B5D00E50902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoboticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.RoboticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robotics.app/Robotics";
+			};
+			name = Debug;
+		};
+		FF8CA6961C257B5D00E50902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoboticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.RoboticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robotics.app/Robotics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF8CA6611C257B5C00E50902 /* Build configuration list for PBXProject "Robotics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CA68F1C257B5D00E50902 /* Debug */,
+				FF8CA6901C257B5D00E50902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8CA6911C257B5D00E50902 /* Build configuration list for PBXNativeTarget "Robotics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CA6921C257B5D00E50902 /* Debug */,
+				FF8CA6931C257B5D00E50902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8CA6941C257B5D00E50902 /* Build configuration list for PBXNativeTarget "RoboticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CA6951C257B5D00E50902 /* Debug */,
+				FF8CA6961C257B5D00E50902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF8CA6701C257B5C00E50902 /* Robotics.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF8CA6711C257B5C00E50902 /* Robotics.xcdatamodel */,
+			);
+			currentVersion = FF8CA6711C257B5C00E50902 /* Robotics.xcdatamodel */;
+			path = Robotics.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF8CA65E1C257B5C00E50902 /* Project object */;
+}
