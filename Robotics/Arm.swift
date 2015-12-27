@@ -23,7 +23,7 @@ class Arm{
     
     init(len: Float){
         self.lenght = len
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.grayColor()
     }
     
 }
