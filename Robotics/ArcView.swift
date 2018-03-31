@@ -6,28 +6,27 @@
 //  Copyright © 2015 erkekin. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class ArcView:UIView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.anchorPoint = CGPointMake(0, 0.5);
-        let link = drawPoint(CGPointMake(0,10), color: UIColor.blackColor().CGColor)
+        self.layer.anchorPoint = CGPoint(x: 0, y: 0.5)
+        let link = draw(point: CGPoint(x: 0,y:10), color: UIColor.black.cgColor)
         layer.addSublayer(link)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.anchorPoint = CGPointMake(0, 0.5);
+        self.layer.anchorPoint = CGPoint(x: 0, y: 0.5)
         
     }
-    func drawPoint(point:CGPoint, color:CGColor) -> CAShapeLayer{
+    func draw(point:CGPoint, color:CGColor) -> CAShapeLayer{
         
         let layer = CAShapeLayer()
         let radius:CGFloat = 20
-        layer.path = UIBezierPath(roundedRect: CGRect(x: point.x - radius, y: point.y - radius, width: radius*2, height: radius*2), cornerRadius: radius).CGPath
+        layer.path = UIBezierPath(roundedRect: CGRect(x: point.x - radius, y: point.y - radius, width: radius*2, height: radius*2), cornerRadius: radius).cgPath
         layer.fillColor = color
         return layer
         

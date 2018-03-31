@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     var robot:Robot!
     var iteration = 0
-    var timer:NSTimer? = NSTimer()
+    var timer:Timer? = Timer()
     
     override func viewDidAppear(animated: Bool) {
         
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     
     @IBAction func drawACircle(sender: AnyObject) {
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateAutomatedRobot"), userInfo: nil, repeats: true)
+        timer = .scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateAutomatedRobot"), userInfo: nil, repeats: true)
         
         timer!.fire()
     }
@@ -138,19 +138,7 @@ class ViewController: UIViewController {
         
         switch sender.state{
             
-        case .Began:
-            
-            break
-        case .Ended:
-            
-            break
-        case .Cancelled:
-            
-            break
-        case .Failed:
-            
-            break
-        case .Changed:
+        case .changed:
             
             let tapPositionOneFingerTap = sender.locationInView(robot.view)
             getAnglesForPoint(tapPositionOneFingerTap)
