@@ -6,7 +6,7 @@
 //  Copyright © 2015 ekin. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 class Robot{
@@ -34,7 +34,7 @@ class Robot{
             x: CGFloat(dk.x + origin.x),
             y: CGFloat(height + dk.y - origin.y  ))
 
-        let layer = view.drawPoint(point, color: UIColor.blueColor().CGColor)
+        let layer = view.drawPoint(point: point, color: UIColor.blue.cgColor)
         view.layer.addSublayer(layer)
 
     }
@@ -76,7 +76,7 @@ class Robot{
         let y2 = ((-1*L2*sin(y)*coordinate.x) + ((L1+L2*cos(y))*coordinate.y))
         let x = atan2f(y2,x1)
 
-        if (isnormal(x) && isnormal(y)){
+        if x.isNormal && y.isNormal {
             return (x,y)
         }else{
             return (self[0].angle * -1,self[1].angle * -1)

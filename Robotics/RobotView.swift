@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+
 
 class RobotView: UIView {
 
@@ -22,10 +22,10 @@ class RobotView: UIView {
         return layer
 
     }
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()!
-        CGContextSetLineWidth(context, gridWidth)
-        CGContextSetStrokeColorWithColor(context, UIColor(red:0.73, green:0.84, blue:0.95, alpha:1).CGColor)
+        context.setLineWidth(gridWidth)
+        context.setStrokeColor(UIColor(red:0.73, green:0.84, blue:0.95, alpha:1).cgColor)
 
         // Calculate basic dimensions
         let columnWidth: CGFloat = self.frame.size.width / (CGFloat(self.columns) + 1.0)
@@ -38,10 +38,9 @@ class RobotView: UIView {
         for i in 1...self.columns {
             let startPoint: CGPoint = CGPoint(x: columnWidth * CGFloat(i), y: 0.0)
             let endPoint: CGPoint = CGPoint(x: startPoint.x, y: self.frame.size.height)
-
-            CGContextMoveToPoint(context, startPoint.x, startPoint.y)
-            CGContextAddLineToPoint(context, endPoint.x, endPoint.y)
-            CGContextStrokePath(context)
+            context.move(to: startPoint)
+            context.addLine(to: endPoint)
+            context.strokePath()
         }
 
         // ---------------------------
@@ -50,12 +49,9 @@ class RobotView: UIView {
         for j in 1...numberOfRows {
             let startPoint: CGPoint = CGPoint(x: 0.0, y: rowHeight * CGFloat(j))
             let endPoint: CGPoint = CGPoint(x: self.frame.size.width, y: startPoint.y)
-
-            CGContextMoveToPoint(context, startPoint.x, startPoint.y)
-            CGContextAddLineToPoint(context, endPoint.x, endPoint.y)
-            CGContextStrokePath(context);
+            context.move(to: startPoint)
+            context.addLine(to: endPoint)
+            context.strokePath();
         }
     }
-
-
 }
