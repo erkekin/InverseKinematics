@@ -9,8 +9,8 @@
 import UIKit
 
 enum Dnm {
-  case z
   case a
+  case z
 }
 
 extension Float{
