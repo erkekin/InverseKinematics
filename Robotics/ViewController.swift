@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum Dnm {
+  case z
+  case a
+}
+
 extension Float{
     func normaldeg() -> Float{
         return self * 180.0 / .pi
@@ -24,6 +29,7 @@ extension Float{
 
     }
 }
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var v1Field: UITextField!
@@ -144,6 +150,7 @@ class ViewController: UIViewController {
         }
 
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
