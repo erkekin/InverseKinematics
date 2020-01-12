@@ -1,5 +1,5 @@
 # InverseKinematics
-Two linked Robotic arm Inverse Kinematics with Swift.
+Two linked Robotic arm Inverse Kinematics with Swift 5.
 
 ![regression gif](https://github.com/erkekin/InverseKinematics/blob/master/Robotics/IK.gif?raw=true)
 
