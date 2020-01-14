@@ -1,6 +1,6 @@
 enum ERK {
  case b
     case a
- case c
+ case c   
    case g
 }
