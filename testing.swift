@@ -1,6 +1,6 @@
 import Foundation
 
-enum ERK {
+enum ERK     {
  case b
     case a
  case c   
