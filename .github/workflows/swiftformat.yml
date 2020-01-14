@@ -9,9 +9,11 @@ jobs:
       with: 
         ref: ${{ github.head_ref }}
     - name: Run SwiftFormat
-      uses: erkekin/SwiftFormat@master
-      with: 
-        args: "--swiftversion 5 --rules indent,linebreaks --verbose"
+    - run: |
+          curl  https://raw.githubusercontent.com/nicklockwood/SwiftFormat/master/CommandLineTool/swiftformat -o swiftformat
+          chmod u+x swiftformat
+          ./swiftformat --swiftversion 5 --rules indent,linebreaks --verbose
+          rm swiftformat
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1
       with:
